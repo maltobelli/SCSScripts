@@ -7,7 +7,7 @@ import sys
 import socket
  
 mechanicalWipeType = "zero"
-webhook_url = 'https://hooks.slack.com/services/$$$$/$$$$'
+webhook_url = 'https://hooks.slack.com/services/$$$$/$$$$' #Edit me
  
 serviceTag = ((subprocess.Popen(['dmidecode','-s','system-serial-number'],stdout=subprocess.PIPE)).stdout.readline())[:-1]
 model = ((subprocess.Popen(['dmidecode','-s','system-product-name'],stdout=subprocess.PIPE)).stdout.readline())[:-1]
@@ -124,7 +124,7 @@ for entry in os.scandir("/sys/block/") :
         else :
             logContents = logContents + "\r\nWiped "+entry.path+" with "+wiped
  
-#Log file out to slack - EDIT HERE
+#Log file out to slack 
 import json
 import requests
  
