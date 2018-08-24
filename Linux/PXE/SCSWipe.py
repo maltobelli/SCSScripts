@@ -6,6 +6,9 @@ import time
 import sys
 import socket
  
+#Tested on Debian buster with the below additionally installed packages
+# hdparm pm-utils python3 python3-dialog cifs-utils nvme-cli python3-requests
+ 
 mechanicalWipeType = "zero"
 webhook_url = 'https://hooks.slack.com/services/$$$$/$$$$' #Edit me
  
